@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant Menu</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="menu.css">
+        <link rel="stylesheet" type="text/css" href="product.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="logo.png" alt="logo" class="logo">
+            </div>
+            <div class="nav-right">
+                <button id="login-button"><a href="./signup.html">Login</a></button>
+                <ul class="nav-menu">
+                    <li>Home</li>
+                    <li>Our Menu</li>
+                    <li>Our Offers</li>
+                    <li>Know us more</li>
+                    <li>Your order</li>
+                    <li>Cart (<span id="cartSize">0</span>)</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="product-details-container">
+            <div class="product-details-card">
+                <div id="product-image">
+                    <!-- <img src="best-seller-1.jpg" alt="product1" class="product-image"> -->
+                </div>
+                <div class="product-details">
+                    <h1 id="product-name"></h1>
+                    <span class="rating star-color">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        (4.0/5)
+                    </span>
+                    <p id="product-description"></p>
+                    <p id="product-price"></p>
+                    <div class="product-buttons">
+                        <button class="add-to-cart">Add To Cart</button>
+                        <button class="buy-now"><a href="./orders.html">Order It</a></button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-section1">
+                    <img src="logo.png" alt="logo" class="logo">
+                </div>
+                <div class="footer-section2">
+                    <h1>Quick Links</h1>
+                    <span>Our Menu</span>
+                    <span>Our Offers</span>
+                    <span>Know What We Have Achieved</span>
+                </div>
+                <div class="footer-section3">
+                    <h1>Wanna Get Updated with Our Exciting Offers?</h1>
+                    <span>Follow us on:</span>
+                    <span>Instagram | Facebook | Twitter</span>
+                    <form>
+                        <input type="text" placeholder="Subscribe for daily exciting offers" class="email-input">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                Terms & Conditions | Privacy Policy | All Rights Reserved
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/ea50694bb0.js" crossorigin="anonymous"></script>
+        <script src="menulist.js"></script>
+        <script src="product.js"></script>
+    </body>
+</html>
